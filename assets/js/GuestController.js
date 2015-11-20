@@ -30,11 +30,11 @@ var GuestController = {
 		var guest = {
 			name: form.name.value,
 			email: form.email.value,
-            telefone: form.telefone.value,
-            rua: form.rua.value,
-            bairro : form.bairro.value,
-            numero: form.numero.value,
-            cidade: form.cidade.value
+            		telefone: form.telefone.value,
+            		rua: form.rua.value,
+            		bairro : form.bairro.value,
+            		numero: form.numero.value,
+            		cidade: form.cidade.value
 		};
 		GuestService.add(guest, function(addedGuest) {
 			GuestController.addToHTML(addedGuest);
@@ -71,23 +71,23 @@ var GuestController = {
 			ddName = GuestController.createDD(guest.name, 'name'),
 			imgDelete = GuestController.createDelete(guest),
 			ddEmail = GuestController.createDD(guest.email, 'email'),
-            ddEndereco = GuestController.createDD(guest.endereco, 'endereco'),
-            ddTelefone = GuestController.createDD(guest.telefone, 'telefone'),
-            ddRua = GuestController.createDD(guest.rua, 'rua'),
-            ddBairo = GuestController.createDD(guest.bairro, 'bairro'),
-            ddNumero = GuestController.createDD(guest.numero, 'numero'),
-            ddCidade = GuestController.createDD(guest.cidade, 'cidade');
+            		ddEndereco = GuestController.createDD(guest.endereco, 'endereco'),
+            		ddTelefone = GuestController.createDD(guest.telefone, 'telefone'),
+            		ddRua = GuestController.createDD(guest.rua, 'rua'),
+            		ddBairo = GuestController.createDD(guest.bairro, 'bairro'),
+            		ddNumero = GuestController.createDD(guest.numero, 'numero'),
+            		ddCidade = GuestController.createDD(guest.cidade, 'cidade');
 		
 		ddName.appendChild(imgDelete);
 		
 		dl.appendChild(dt);
 		dl.appendChild(ddName);
 		dl.appendChild(ddEmail);
-        dl.appendChild(ddTelefone);
-        dl.appendChild(ddRua);
-        dl.appendChild(ddBairo);
-        dl.appendChild(ddNumero);
-        dl.appendChild(ddCidade);
+        	dl.appendChild(ddTelefone);
+        	dl.appendChild(ddRua);
+        	dl.appendChild(ddBairo);
+        	dl.appendChild(ddNumero);
+        	dl.appendChild(ddCidade);
 		
 		guestList.appendChild(dl);
 	},
